@@ -4,99 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ronilson W. da S. Pereira</title>
-    <!-- Bootstrap CSS direto da internet para não quebrar o layout -->
-    <link rel="stylesheet" href="https://jsdelivr.net">
-    <!-- FontAwesome para os ícones das redes sociais -->
-    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
-        body { font-family: 'Roboto', sans-serif; color: #333; padding-top: 70px; }
-        .navbar { background-color: #fff; border-bottom: 1px solid #eceff1; }
-        .navbar-brand i { font-size: 1.2rem; margin-right: 10px; color: #555; }
-        .navbar-brand i:hover { color: #007bff; }
-        .profile-img { width: 100%; max-width: 230px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .news-table th { font-weight: 500; width: 120px; color: #777; }
-        h1 { font-size: 2.5rem; }
-        h2 { font-size: 1.8rem; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        nav { border-bottom: 1px solid #ddd; padding: 15px 0; background: #fff; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .nav-links { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+        .nav-links a { text-decoration: none; color: #555; font-weight: 500; }
+        .nav-links a:hover { color: #007bff; }
+        .social-icons a { font-size: 1.3rem; margin-right: 15px; color: #333; text-decoration: none; }
+        .main-content { display: flex; flex-direction: row; gap: 40px; margin-top: 40px; align-items: flex-start; }
+        .text-column { flex: 2; }
+        .photo-column { flex: 1; text-align: center; }
+        .profile-img { width: 100%; max-width: 240px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        h1 { margin-top: 0; font-size: 2.5rem; font-weight: 400; }
+        h1 span { font-weight: 700; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 40px; }
+        .news-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .news-table td { padding: 8px 0; vertical-align: top; }
+        .news-date { width: 120px; color: #777; font-weight: 500; }
+        footer { margin-top: 60px; padding: 20px 0; border-top: 1px solid #eee; text-align: center; color: #777; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .main-content { flex-direction: column-reverse; text-align: center; }
+            .nav-container { flex-direction: column; gap: 10px; }
+        }
     </style>
 </head>
 <body>
 
     <!-- Menu Superior -->
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
-        <div class="container">
-            <div class="navbar-brand">
-                <!-- Substitua o '#' pelos seus links reais depois se quiser -->
-                <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <nav>
+        <div class="nav-container">
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" title="GitHub">💻</a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">👔</a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#news">news</a></li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#">about</a></li>
+                <li><a href="#news">news</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Conteúdo Principal -->
-    <div class="container mt-4">
-        <div class="row">
-            <!-- Coluna do Texto (Esquerda) -->
-            <div class="col-md-8">
-                <h1>Ronilson W. <span class="font-weight-bold" style="font-weight:700;">da S. Pereira</span></h1>
-                <p class="text-muted">PhD student CCOMP-IME-UERJ, Professor EBTT substituto @CEFET-RJ / Engenheiro de Computação / Cientista de Dados 🇧🇷.</p>
+    <div class="container">
+        <div class="main-content">
+            
+            <!-- Coluna do Texto -->
+            <div class="text-column">
+                <h1>Ronilson W. <span>da S. Pereira</span></h1>
+                <p style="color: #666; font-size: 1.1rem; margin-top: -10px;">PhD student CCOMP-IME-UERJ, Professor EBTT substituto @CEFET-RJ / Engenheiro de Computação / Cientista de Dados 🇧🇷.</p>
                 
-                <div class="mt-4">
-                    <p>Olá! Eu sou Ronilson, Engenheiro de Computação, cientista de dados e doutorando em Ciências Computacionais na Universidade do Estado do Rio de Janeiro (UERJ). Com mestrado em Engenharia Elétrica (UFPA) e uma trajetória construída na interseção entre pesquisa acadêmica, ensino e infraestrutura de tecnologia, meu foco está em resolver problemas complexos por meio do aprendizado de máquina e da inteligência artificial.</p>
-                    <p>Minha jornada me levou ao desenvolvimento e aplicação prática de modelos preditivos com impacto direto no mundo real. Como pesquisador e professor no CEFET/RJ, mantenho-me constantemente atualizado e atuante em áreas como:</p>
-                    <ul>
-                        <li>Machine Learning & Deep Learning</li>
-                        <li>IA Confiável e Explicabilidade (XAI)</li>
-                        <li>Ciência de Dados e Análise Preditiva Aplicada à Saúde</li>
-                        <li>Processamento de Linguagem Natural (PLN)</li>
-                    </ul>
-                    <p>O que mais me motiva é a oportunidade de transformar dados e arquiteturas computacionais em soluções inteligentes e interpretáveis para a sociedade. Tenho grande entusiasmo pelo ecossistema de dados, pelo rigor das revisões sistemáticas de literatura e pelo compartilhamento de conhecimento em sala de aula.</p>
-                    <p>Meus principais interesses incluem Python, Machine Learning, Ciência de Dados, Programação Orientada a Objetos e Arquitetura de Software.</p>
-                    <p>📑 Veja mais detalhes no meu <a href="http://cnpq.br" target="_blank">CV (Lattes)</a>.</p>
-                </div>
+                <p>Olá! Eu sou Ronilson, Engenheiro de Computação, cientista de dados e doutorando em Ciências Computacionais na Universidade do Estado do Rio de Janeiro (UERJ). Com mestrado em Engenharia Elétrica (UFPA) e uma trajetória construída na interseção entre pesquisa acadêmica, ensino e infraestrutura de tecnologia, meu foco está em resolver problemas complexos por meio do aprendizado de máquina e da inteligência artificial.</p>
+                
+                <p>Minha jornada me levou ao desenvolvimento e aplicação prática de modelos preditivos com impacto direto no mundo real. Como pesquisador e professor no CEFET/RJ, mantenho-me constantemente atualizado e atuante em áreas como:</p>
+                <ul>
+                    <li>Machine Learning & Deep Learning</li>
+                    <li>IA Confiável e Explicabilidade (XAI)</li>
+                    <li>Ciência de Dados e Análise Preditiva Aplicada à Saúde</li>
+                    <li>Processamento de Linguagem Natural (PLN)</li>
+                </ul>
+                
+                <p>O que mais me motiva é a oportunidade de transformar dados e arquiteturas computacionais em soluções inteligentes e interpretáveis para a sociedade. Tenho grande entusiasmo pelo ecossistema de dados, pelo rigor das revisões sistemáticas de literatura e pelo compartilhamento de conhecimento em sala de aula.</p>
+                
+                <p>Meus principais interesses incluem Python, Machine Learning, Ciência de Dados, Programação Orientada a Objetos e Arquitetura de Software.</p>
+                
+                <p>📑 Veja mais detalhes no meu <a href="http://cnpq.br" target="_blank">CV (Lattes)</a>.</p>
             </div>
             
-            <!-- Coluna da Foto (Direita) -->
-            <div class="col-md-4 text-center mt-4 mt-md-0">
+            <!-- Coluna da Foto -->
+            <div class="photo-column">
                 <img src="/assets/img/foto.jpg" class="profile-img" alt="Ronilson Pereira">
             </div>
+            
         </div>
 
-        <!-- Seção SELECIONADA DE NOVIDADES -->
-        <div class="row mt-5" id="news">
-            <div class="col-12">
-                <h2>news</h2>
-                <table class="table table-sm table-borderless news-table mt-3">
-                    <tr>
-                        <th scope="row">Ago 2026</th>
-                        <td>Iniciei o projeto de Programação Orientada a Objetos (POO) em Java.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Out 2025</th>
-                        <td>Artigo "Modelo preditivo para resultados clínicos da tuberculose com Redes Neurais" publicado na <em>Journal of Health Informatics (JHI)</em>.</td>
-                    </tr>
-                </table>
-            </div>
+        <!-- Seção de Novidades -->
+        <div id="news">
+            <h2>news</h2>
+            <table class="news-table">
+                <tr>
+                    <td class="news-date">Ago 2026</td>
+                    <td>Iniciei o projeto de Programação Orientada a Objetos (POO) em Java.</td>
+                </tr>
+                <tr>
+                    <td class="news-date">Out 2025</td>
+                    <td>Artigo "Modelo preditivo para resultados clínicos da tuberculose com Redes Neurais" publicado na <em>Journal of Health Informatics (JHI)</em>.</td>
+                </tr>
+            </table>
         </div>
         
         <!-- Rodapé -->
-        <footer class="text-muted text-center mt-5 py-4" style="border-top: 1px solid #eee; font-size: 0.9rem;">
+        <footer>
             <p>Esta é uma página pessoal e não uma página oficial da UERJ ou do CEFET-RJ.</p>
             <p>© Copyright 2026 Ronilson W. da S. Pereira.</p>
         </footer>
     </div>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://jquery.com"></script>
-    <script src="https://jsdelivr.net"></script>
 </body>
 </html>
