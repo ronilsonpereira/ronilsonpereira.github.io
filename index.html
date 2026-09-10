@@ -768,61 +768,42 @@
                 <h2 class="section-title">Vamos conversar?</h2>
             </div>
 
-            <div class="contact-box">
-                <div class="contact-info">
+            <div class="contact-box" style="display: flex; justify-content: center;">
+                <div class="contact-info" style="max-width: 600px; text-align: center;">
                     <h3>Entre em contato</h3>
                     <p>
                         Tem uma proposta de projeto, dúvida ou quer trocar uma ideia sobre tecnologia? Me mande uma
                         mensagem!
                     </p>
 
-                    <div class="contact-links">
-                        <a href="mailto:ronilson@exemplo.com" class="contact-link-item">
+                    <div class="contact-links"
+                        style="display: flex; flex-direction: column; align-items: stretch; gap: 12px; max-width: 380px; margin: 0 auto;">
+                        <a href="mailto:ronilsonengenharia@gmail.com" class="contact-link-item"
+                            style="display: flex; align-items: center; gap: 10px;">
                             <div class="contact-icon">✉️</div>
                             <span>ronilsonengenharia@gmail.com</span>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ronilson-pereira-256499178/" target="_blank"
-                            rel="noopener noreferrer" class="contact-link-item">
+                            rel="noopener noreferrer" class="contact-link-item"
+                            style="display: flex; align-items: center; gap: 10px;">
                             <div class="contact-icon">💼</div>
                             <span>LinkedIn /ronilsonpereira</span>
                         </a>
 
                         <a href="https://github.com/ronilsonpereira" target="_blank" rel="noopener noreferrer"
-                            class="contact-link-item">
+                            class="contact-link-item" style="display: flex; align-items: center; gap: 10px;">
                             <div class="contact-icon">💻</div>
-                            <span>GitHub /ronilsonpereira </span>
+                            <span>GitHub /ronilsonpereira</span>
                         </a>
 
                         <a href="http://lattes.cnpq.br/4826956817598002" target="_blank" rel="noopener noreferrer"
-                            class="contact-link-item">
+                            class="contact-link-item" style="display: flex; align-items: center; gap: 10px;">
                             <div class="contact-icon">📑</div>
-                            <span> Currículo Lattes /ronilsonpereira </span>
+                            <span>Currículo Lattes /ronilsonpereira</span>
                         </a>
                     </div>
                 </div>
-
-                <form class="contact-form" id="formContato" onsubmit="enviarMensagem(event)">
-                    <div class="form-group">
-                        <label for="nome">Seu Nome</label>
-                        <input type="text" id="nome" class="form-input" placeholder="Como posso te chamar?" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Seu E-mail</label>
-                        <input type="email" id="email" class="form-input" placeholder="seuemail@exemplo.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" class="form-textarea" placeholder="Escreva sua mensagem aqui..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-primary" style="justify-content: center; width: 100%;">
-                        Enviar Mensagem 🚀
-                    </button>
-                </form>
             </div>
         </section>
     </main>
@@ -832,9 +813,7 @@
             <p>&copy; 2026 Ronilson W. da S. Pereira. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <div id="toast">Mensagem enviada com sucesso! Obrigado!</div>
-
+    <!-- <div id="toast">Mensagem enviada com sucesso! Obrigado!</div> -->
     <script>
         function enviarMensagem(event) {
             event.preventDefault();
